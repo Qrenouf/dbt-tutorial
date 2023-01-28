@@ -1,0 +1,44 @@
+
+
+============================== 2023-01-27 17:51:35.732006 | d1978c8b-5c76-402e-ae94-d13b5b3a1319 ==============================
+[0m17:51:35.732006 [info ] [MainThread]: Running with dbt=1.4.1
+[0m17:51:35.734341 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/qt/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'jaffle_shop', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m17:51:35.734638 [debug] [MainThread]: Tracking: tracking
+[0m17:51:35.736153 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7d33a6980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7d33a61d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7d33a68c0>]}
+[0m17:51:35.736696 [info ] [MainThread]: Creating dbt configuration folder at /home/qt/.dbt
+[0m17:51:35.738090 [debug] [MainThread]: Starter project path: /home/qt/Documents/learning/dbt-tutorial/lib/python3.10/site-packages/dbt/include/starter_project
+[0m17:59:11.800376 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7d0e62740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7d0e61f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7d0e61240>]}
+[0m17:59:11.801488 [debug] [MainThread]: Flushing usage events
+[0m17:59:12.095611 [error] [MainThread]: Encountered an error:
+
+[0m17:59:12.097292 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/qt/Documents/learning/dbt-tutorial/lib/python3.10/site-packages/dbt/main.py", line 135, in main
+    results, succeeded = handle_and_check(args)
+  File "/home/qt/Documents/learning/dbt-tutorial/lib/python3.10/site-packages/dbt/main.py", line 198, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/home/qt/Documents/learning/dbt-tutorial/lib/python3.10/site-packages/dbt/main.py", line 245, in run_from_args
+    results = task.run()
+  File "/home/qt/Documents/learning/dbt-tutorial/lib/python3.10/site-packages/dbt/task/init.py", line 305, in run
+    self.create_profile_from_target(adapter, profile_name=project_name)
+  File "/home/qt/Documents/learning/dbt-tutorial/lib/python3.10/site-packages/dbt/task/init.py", line 180, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "/home/qt/Documents/learning/dbt-tutorial/lib/python3.10/site-packages/dbt/task/init.py", line 164, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+  File "/home/qt/Documents/learning/dbt-tutorial/lib/python3.10/site-packages/dbt/task/init.py", line 130, in generate_target_from_input
+    target[key] = click.prompt(
+  File "/home/qt/Documents/learning/dbt-tutorial/lib/python3.10/site-packages/click/termui.py", line 166, in prompt
+    value = prompt_func(prompt)
+  File "/home/qt/Documents/learning/dbt-tutorial/lib/python3.10/site-packages/click/termui.py", line 149, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+
+
+============================== 2023-01-27 17:59:18.376607 | dfed9371-a4e6-4258-b3be-4bf5069b1a39 ==============================
+[0m17:59:18.376607 [info ] [MainThread]: Running with dbt=1.4.1
+[0m17:59:18.378961 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/qt/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'jaffle_shop', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m17:59:18.379284 [debug] [MainThread]: Tracking: tracking
+[0m17:59:18.380897 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f973fdd68f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f973fdd5ab0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f973fdd63b0>]}
+[0m17:59:18.382243 [info ] [MainThread]: A project called jaffle_shop already exists here.
+[0m17:59:18.382707 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f973fdd5ab0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f973fdd73a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f973fdd66b0>]}
+[0m17:59:18.383082 [debug] [MainThread]: Flushing usage events
