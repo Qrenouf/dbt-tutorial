@@ -2,4 +2,4 @@
 target/
 dbt_packages/
 logs/
-.dbt/
+.dbt/dbt-learning-376017-86c5ea176759.json
